@@ -1,0 +1,93 @@
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  
+  .navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+  .navbar a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+  
+  .navbar a:hover {
+    background-color: #555;
+}
+
+/* Resetear márgenes y rellenos para el cuerpo y la sección */
+body, section {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para la sección */
+  .mi-seccion {
+    padding: 20px;
+    margin: 20px;
+    background-color: #988686;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para los elementos dentro de la sección */
+  .mi-seccion h2 {
+    color: 333;
+  }
+  
+  .mi-seccion p {
+    color: 666;
+  }
+  
+  .supra{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .supra img{
+    width: 500px;
+    height: 320px;
+    border-radius: 7%;
+    border: #373c4a 3px solid;
+  }
+
+  .texto_art{
+    background-color: #9d8e8e;
+    padding: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .container{
+    display: flex;
+    margin: 30px;
+  }
+
+  .container div{
+    background-color: #817777;
+    margin-left: 40px ;
+    padding: 20px;
+    border-radius: 5px;
+    
+  }
+  .container :hover{
+    transform: scale(1.1);
+  }
+
+
+
