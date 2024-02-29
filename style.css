@@ -1,12 +1,10 @@
-*{
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
+body{
+  background-color: #333;
 }
-
 .navbar {
     background-color: #333;
     overflow: hidden;
+    border-bottom: 2px solid white;
 }
   
   .navbar ul {
@@ -33,16 +31,18 @@
 }
 
 /* Resetear márgenes y rellenos para el cuerpo y la sección */
-body, section {
+section {
     margin: 0;
     padding: 0;
   }
   
   /* Estilos para la sección */
   .mi-seccion {
-    padding: 20px;
-    margin: 20px;
-    background-color: #988686;
+    width: 90vw;
+    padding: 2em;
+    margin: auto;
+    margin-top: 4em;
+    background-color: #817777;
     border-radius: 5px;
   }
   
@@ -56,6 +56,7 @@ body, section {
   }
   
   .supra{
+    gap: 2em;
     padding: 50px;
     display: flex;
     align-items: center;
@@ -66,28 +67,59 @@ body, section {
     border-radius: 7%;
     border: #373c4a 3px solid;
   }
+  .supra img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+  }
 
   .texto_art{
-    background-color: #9d8e8e;
+    background-color: #817777;
     padding: 40px;
     margin-left: 10px;
     border-radius: 5px;
   }
-  .container{
+  #cards-container{
+    width: 85vw;
+    margin: auto;
+    padding: 4em;
+    margin-bottom: 2em;
     display: flex;
-    margin: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    align-items: center;
+    gap: 4em;
+    background-color: #333;
+    border-radius: 20px;
   }
 
-  .container div{
+  .card{
     background-color: #817777;
-    margin-left: 40px ;
-    padding: 20px;
-    border-radius: 5px;
-    
+    border-radius: 20%;
+    align-items: center;
+    width: 14em;
+    height: 15em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    margin-left: 2em;
+    transition: transform 0.3s ease-in-out;
   }
-  .container :hover{
+  /*al pasar el cursos sobre este elemento/*/
+  .card:hover{
     transform: scale(1.1);
+    background-color: #4b3939;
+    color: white ;
   }
+
+  /* # para seleccionar un id unico/*/
+  #ej_flex{
+    border: 2px solid black;
+    /*porcentaje del ancho de la pantalla donde este /*/
+    width: 80vw;
+    margin: auto;
+    padding: 2em;
+  }
+
 
 
 
